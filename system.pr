@@ -1,0 +1,10 @@
+ro.sys.usb.bicr=no
+ro.sys.usb.storage.type=adb,mtp,otg
+persist.service.adb.enable=1
+persist.service.debuggable=1
+persist.sys.usb.config=mtp,adb,otg
+persist.sys.disable_rescue=true
+ro.postinstall.fstab.prefix=/system
+ro.secure=0
+ro.allow.mock.location=1
+ro.debuggable=1
