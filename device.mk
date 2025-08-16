@@ -83,13 +83,25 @@ PRODUCT_PACKAGES += \
     mtk_plpath_utils \
     mtk_plpath_utils.recovery
 
-# Keystore Hal
-#PRODUCT_PACKAGES += \
-#    android.system.keystore2
+ Keystore Hal
+PRODUCT_PACKAGES += \
+    android.system.keystore2
 
-# Security
-#PRODUCT_PACKAGES += \
-#    android.hardware.security.keymint \
+ Security
+PRODUCT_PACKAGES += \
+    android.hardware.security.keymint \
+
+# Drm
+PRODUCT_PACKAGES += \
+    android.hardware.drm@1.4
+
+# Keymaster
+PRODUCT_PACKAGES += \
+    android.hardware.keymaster@4.1
+
+# Additional target Libraries
+TARGET_RECOVERY_DEVICE_MODULES += \
+    android.hardware.keymaster@4.1
 
 # Update engine
 PRODUCT_PACKAGES += \
@@ -101,3 +113,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES_DEBUG += \
     bootctrl \
     update_engine_client
+
+TW_RECOVERY_ADDITIONAL_RELINK_LIBRARY_FILES += \
+    $(TARGET_OUT_SHARED_LIBRARIES)/android.hardware.keymaster@4.1.so
