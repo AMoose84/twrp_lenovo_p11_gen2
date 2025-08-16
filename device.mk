@@ -83,14 +83,16 @@ PRODUCT_PACKAGES += \
     mtk_plpath_utils \
     mtk_plpath_utils.recovery
 
- Keystore Hal
+# Keystore Hal
 PRODUCT_PACKAGES += \
     android.system.keystore2
 
  Security
 PRODUCT_PACKAGES += \
     android.hardware.security.keymint \
-
+	android.hardware.security.secureclock \
+    android.hardware.security.sharedsecret
+	
 # Drm
 PRODUCT_PACKAGES += \
     android.hardware.drm@1.4
