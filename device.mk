@@ -87,7 +87,7 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.system.keystore2
 
- Security
+# Security
 PRODUCT_PACKAGES += \
     android.hardware.security.keymint \
 	android.hardware.security.secureclock \
