@@ -1,4 +1,11 @@
 import /init.recovery.project.rc
+import /vendor/etc/init/android.hardware.gatekeeper@1.0-service.rc
+import /vendor/etc/init/android/android.hardware.security.keymint-service.beanpod.rc
+import /vendor/etc/init/android/vendor.mediatek.hardware.keymaster_attestation@1.1-service.rc
+import /vendor/etc/init/android/microtrust.rc
+import /vendor/etc/init/android/microtrust.bp_kmsetkey_ca.rc
+
+
 
 on init
     setprop sys.usb.configfs 1
